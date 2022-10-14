@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-# kills the infinity and beyond program using sigkill signal
-
-# Terminate the infinate process
-pkill -9 "bash ./7-highlander" -f
+#Bash script that kills the process 7-highlander.
+kill -s SIGKILL "$(pgrep -f 7-highlander)"
